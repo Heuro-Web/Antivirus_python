@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Examen sécurisé</title>
+  <script defer src="/static/js/student_exam.js"></script>
+</head>
+<body data-session-id="{{ session_id }}">
+  <h1>Session {{ session_id }}</h1>
+  <div id="timer"></div>
+  <video id="webcam" autoplay muted playsinline width="240"></video>
+  <canvas id="capture-canvas" width="320" height="240" style="display:none"></canvas>
+  <div id="violations">Violations: <span id="violations-count">0</span></div>
+  <button id="submit-btn">Soumettre</button>
+</body>
+</html>
